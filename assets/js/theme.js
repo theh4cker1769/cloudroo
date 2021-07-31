@@ -6,7 +6,7 @@
         $(this).next().toggleClass('nav-show')
     });
     /*--
-    	Mobile Menu
+        Mobile Menu
     ------------------------*/
     $('.mobile-menu nav').meanmenu({
         meanScreenWidth: "990",
@@ -127,7 +127,7 @@
     });
 
     /*--------------------------
-    	portfolio gallery post
+        portfolio gallery post
     ---------------------------- */
     $('.portfolio_gallery_post').owlCarousel({
         nav: true,
@@ -596,7 +596,7 @@
     });
 
     /*--
-    	One Page Nav
+        One Page Nav
     ----------------------------------- */
     var top_offset = $('.one_page').height() + 0;
     $('.one_page .invenit_menu .nav_scroll').onePageNav({
@@ -638,7 +638,7 @@
     });
 
     /*--------------------------
-    	blog messonary
+        blog messonary
     ---------------------------- */
     $('.bgimgload').imagesLoaded(function() {
         if ($.fn.isotope) {
@@ -862,3 +862,19 @@
 
 
 })(jQuery);
+
+/* Custom JS */
+
+$(document).ready(function() {
+    $(".myBtn").click(function() {
+        $(this).parent().siblings("p").children(".more").toggle();
+        $(this).parent().siblings("p").children(".dots").toggle();
+        $(this).toggleClass("open");
+
+        if ($(this).hasClass("open")) {
+            $(this).html("Read Less");
+        } else {
+            $(this).html("Read More");
+        }
+    });
+});

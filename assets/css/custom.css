@@ -39,3 +39,16 @@
 .contact-wrap input[type="submit"]:hover {
     background-color: #052944;
 }
+
+.icon-list-items li span {
+    font-size: 15px;
+}
+
+.more {
+    display: none;
+}
+
+#services .service_btn1 .myBtn {
+    color: #096BD8;
+    cursor: pointer;
+}
