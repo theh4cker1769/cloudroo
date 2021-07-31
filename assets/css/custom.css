@@ -52,3 +52,15 @@
     color: #096BD8;
     cursor: pointer;
 }
+
+#contactUs {
+    background-color: #F8F8F8;
+}
+
+.invenit_button {
+    margin-top: 0;
+}
+
+.invenit_tab_area .service-item.invenit_service_item img {
+    width: 40%;
+}
